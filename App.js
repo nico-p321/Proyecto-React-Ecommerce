@@ -19,7 +19,7 @@ const AppContent = () => {
   const [finalPaymentMethod, setFinalPaymentMethod] = useState('card');
   const [lastOrderTotal, setLastOrderTotal] = useState(0);
 
-  // Aquí usamos el contexto (que ahora sí funciona porque estamos dentro del Provider)
+  // Aquí usamos el contexto para obtener totalPrice y clearCart
   const { totalPrice, clearCart } = useCart(); 
 
   const renderScreen = () => {
